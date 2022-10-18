@@ -67,3 +67,21 @@ expected output: 47
 
 input: 10, -, 4S10M50N5M3S
 expected output: 78
+
+
+______________________________________________________________________________________________________________________________
+
+Unix:
+You can't sort by position before adjusting for soft clipping otherwise it will be out of order and then it won't really matter if it was sorted.
+
+Python:
+Using a dictionary rather than a set will make this run a lot faster because the set will take longer to search.
+
+Functions:
+looks good
+
+Unit tests:
+I'd make the Qnamesof the inputand output tests include what the line is testing, can't really tell you if it is accurate or not because I don't want to go down line by line on each test decoding bitflags and CIGAR stings by hand to see if they are accurate.
+
+Overall:
+Looks good, Should be fun.
